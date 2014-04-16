@@ -1,0 +1,414 @@
+html{
+    overflow-y: scroll;
+    
+}
+body{
+    font-family: sans-serif;
+
+}
+
+
+/*
+* The header
+*/
+#pageHeader{
+  top: 0px;
+  
+  width: 1080px;
+  height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4em;
+}
+
+.section{
+    margin-bottom: 4em;
+}
+h1{
+    font-weight: bold;
+    font-size: 40pt;
+}
+
+h1 span{
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    background-color: black;
+    color: white;
+    display: inline-block;
+    margin: 0 18px 0 0px;
+    text-align: center;
+    
+}
+
+.abstract{
+    width: 70ex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    text-align: justify;
+}
+
+.fullwidth, #paperlist .row{
+    margin-left: auto;
+    margin-right: auto;
+    width: 108ex;
+}
+
+/**
+* Next button
+*/
+.next, .button{
+    border-radius: 2px;
+    background-image: -webkit-gradient(
+	linear,
+	left top,
+	left bottom,
+        color-stop(0.25, #C4E58E),
+	color-stop(1, #ABDD6D)
+    );
+    padding: 0px 5px 0px 5px; 
+    min-width: 85px;
+    display: inline-block;
+    overflow: hidden;
+    height: 21px;
+    line-height:21px;
+    text-align: center;
+    font-size: 11pt;
+    border: 1px solid #898e8c;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.next:active, .button:active{
+    background-image: -webkit-gradient(
+	linear,
+	left top,
+	left bottom,
+        color-stop(0.25, #ABDD6D),
+	color-stop(1, #C4E58E)
+    );
+}
+
+/* 
+* CSS for project create/load
+*/
+#manageprojects{
+    
+}
+
+#manageprojects thead tr{
+    font-style: italic;
+}
+
+#manageprojects tr td:nth-child(2){
+    width: 740px;
+}
+
+#manageprojects td{
+    padding: 5px 0px 5px 0px;
+}
+
+#manageprojects tr input[type=text]{
+    width: 500px;
+}
+
+#manageprojects tbody tr td{
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+}
+
+#manageprojects tbody tr:hover td{
+    border-top: 1px dashed gray;
+    border-bottom: 1px dashed gray;
+    cursor: pointer;
+    cursor: hand;
+}
+
+#manageprojects tbody tr td:first-child{
+    border-left: 1px solid transparent;
+    padding-left: 5px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius:2px;
+}
+
+#manageprojects tbody tr td:last-child{
+    border-right: 1px solid transparent;
+    padding-right: 5px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius:2px;
+    
+}
+
+#manageprojects tbody tr:hover td:first-child{
+    border-left: 1px dashed gray;
+    
+}
+
+#manageprojects tbody tr:hover td:last-child{
+    border-right: 1px dashed gray;
+}
+
+#manageprojects td.delete span{
+    visibility:hidden;
+    font-weight: bold;
+    padding-left: 5px;
+    background: url("fig/close_dash.png") no-repeat;  
+}
+
+#manageprojects tbody tr:hover td.delete span{
+    visibility:visible;
+}
+
+
+/* CSS for file load
+*
+*/
+#readfiles{
+    display: none;
+}
+.file div{
+    float:left;
+    font-size: 10pt;
+    font-family: 'Consolas', 'Bitstream Vera Sans Mono', 'Courier New', Courier, monospace !important; 
+    color: gray;
+}
+
+.file{
+    width: auto;
+    height: 25px;
+    line-height: 25px;
+    margin: 0.5em 0 0.5em 0;
+    border: dashed 1px gray;
+    vertical-align: bottom;
+    border-radius: 3px;
+    position: relative;
+}
+
+.file .delete{
+    position:absolute;
+    right: 2px;
+    width:25px;
+    height: 25px;
+}
+
+.file:hover{
+    cursor:hand;
+    cursor: pointer;
+}
+.file .delete span{
+    visibility: hidden;
+    background-image: url("../fig/close_dash.png");  
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+.file .delete span:active{
+    background-image: url("../fig/close_dash_pressed.png");
+}
+
+.file:hover .delete span{
+    visibility: visible;
+}
+
+
+.file-check{
+    width: 25px;
+    height: 25px;
+
+}
+
+.ready .file-check{
+    background-image: url('../fig/check_green.png');
+   
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+/* CSS for abstract
+*
+*/
+#evaluateabstracts{
+    display: none;
+}
+
+#evaluateabstracts:focus{
+    outline: none;
+}
+
+#abstract{
+width: 70ex;
+margin-top: 2em;
+margin-bottom: 2em;
+text-align: justify;
+}
+
+
+
+#title{
+    font-weight: bold;
+    font-size: 16pt;	
+}
+
+#publication{
+    font-style: italic;
+
+}
+
+#details{
+    overflow: hidden;
+}
+
+#details .subdetails{
+    float:left;
+
+}
+
+#details-left{
+    width: 98ex;
+}
+#citecount{
+    font-size: 18pt;
+}
+
+#details-left{
+    margin-right: 2em;
+
+}
+
+#details-right{
+    text-align: center;
+}
+
+#spacer{
+    clear:both;
+}
+
+#keywords{
+    font-size:10pt;
+}
+
+/*
+* CSS for the abstract progress
+*/
+
+#evaluations{
+    overflow: hidden;
+    margin-bottom: 1em;
+}
+#evaluations div{
+    width: 11px;
+    height: 11px;
+    margin: 2px;
+    background-color: lightgray;
+    float: left;
+}
+
+#evaluations .select{
+    background-color: rgba(170,221,109,255);
+}
+
+#evaluations .reject{
+    background-color: rgba(224,7,71,255);
+}
+
+
+#evaluations .cursor{
+    /*
+    background-color: rgba(43,43,40,255);
+    */
+    outline: 2px solid rgba(234,175,15,255);
+}
+
+/*
+* CSS for paper download
+*/
+#downloadpapers{
+    display: none;
+}
+
+#downloadpapers th{
+    font-weight: bold;
+}
+
+#paperlist .row{
+    height: 30px;
+    line-height: 30px;
+    box-shadow: 0px 0px 3px #898e8c;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    font-size: 14px;
+    padding-left: 7px;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+}
+
+#paperlist .row div{
+    float:left;
+}
+
+#paperlist .row .title{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: calc(100% - 65px);
+    overflow: hidden;
+}
+
+#paperlist .row .tags{
+    width: 60px;
+    text-overflow: "+";
+    overflow: hidden;
+    padding-right: 4px;
+    position: absolute;
+    right: 0px;
+}
+
+#paperlist .row:hover{
+    background-color: #EEEEEE;
+    
+    cursor: pointer;
+    cursor: hand;
+}
+
+#paperlist .row:first-of-type{
+    margin-top: 0px;
+}
+
+
+#paperlist .row:last-of-type{
+    margin-bottom: 0px;
+}
+
+#paperlist .row .tags .tag{
+    padding: 1px;
+    border: 1px dotted black;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: bold;
+    height: 12px;
+    line-height: 12px;
+    margin-top: 6px;
+}
+
+#paperlist .row .tags div{
+    float: right;
+}
+
+#paperlist .download{
+    position: absolute;
+    right: 3px;
+    top: 0px;
+    font-size: inherit;
+}
+
+#documentresource{
+    width: 99%;
+    height: 99%;
+}
