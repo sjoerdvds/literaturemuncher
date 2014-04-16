@@ -1,0 +1,4 @@
+This tool allows for a somewhat more easy literature review process:
+1. Loading files of abstracts (usually the result of some query)
+2. Reading & evaluating abstracts (relevant/ not relevant)
+3. Downloading the relevant papers
